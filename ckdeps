@@ -1,16 +1,14 @@
 #!/bin/bash
 #
-# CKDeps - Versão 6.2.2 - Analisa Dependências de Aplicativos Binários Instalado no Slackware
+# CKDeps 6.2.2 - Analysis of Dependencies of Binary Applications Installed on Slackware
 #
-# Criação do Projeto: 04/04/2021
-# Última Atualização: 25/06/2023
+# Criação do Projeto: 2021/04/04
+# Última Atualização: 2026/02/01
 #
-# By Mauricio Ferrari. Santa Catarina, Brasil.
+# By Mauricio Ferrari.
 #
-###############################################################################################
+##########################################################################################
 
-
-# Definição de Variáveis
 
 r='\e[31m'
 g='\e[32m'
