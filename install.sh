@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PRGNAM="ckdeps"
-VERSION=$(< RELEASE)
+VERSION=$(sed -n '3s/.* \([0-9.]*\) -.*/\1/p' "$PRGNAM")
 install_root=${install_root:-""}
 
 set -e
