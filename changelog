@@ -1,19 +1,22 @@
+Sun Feb 01 22:09:12 -03 2026:
+    - add logo.png
+    - change readme
 changelog - 2023/06/25:
-- update version 6.2.2.
-- fix bugs.
+    - update version 6.2.2
+    - fix bugs
 changelog - 2023/06/13:
-- fix -s parameter.
-- update version 6.2.1.
+    - fix -s parameter
+    - update version 6.2.1
 changelog - 2023/05/21:
-- update version 6.2.
-- revised readme.
-- refactory code.
+    - update version 6.2
+    - revised readme
+    - refactory code
 changelog - 2022/09/17:
-- update version 6.1/6.1_2.
-- update readme.
-- optimized code.
+    - update version 6.1/6.1_2
+    - update readme
+    - optimized code
 changelog - 2022/03/13:
-- revision version 6.0_2. 
-- fixed input of parameters by pipe.
+    - revision version 6.0_2
+    - fixed input of parameters by pipe
 changelog - 2022/02/26:
-- first commit version 6.0. 
+    - first commit version
