@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/github/repo-size/LinuxProativo/ckdeps?color=445566&label=Size&style=flat-square"/>
   <img src="https://img.shields.io/github/downloads/LinuxProativo/ckdeps/total?color=445566&label=Downloads&style=flat-square">
   <a href="https://github.com/LinuxProativo/ckdeps/stargazers" style="text-decoration:none;"><img src="https://img.shields.io/github/stars/LinuxProativo/ckdeps?color=445566&label=Stars&style=flat-square"></a>
-  <a href="./LICENSE" style="text-decoration:none;"><img src="https://img.shields.io/github/license/mxnt10/ckdeps?color=445566&label=License&style=flat-square"></a>
+  <a href="./LICENSE" style="text-decoration:none;"><img src="https://img.shields.io/github/license/LinuxProativo/ckdeps?color=445566&label=License&style=flat-square"></a>
 </p>
 
 ## 🔍 Overview
