@@ -3,27 +3,38 @@
 </p>
 
 <h1 align="center"><strong>CkDeps - Check Dependencies for Slackware</strong></h1>
+<h3 align="center"> A Slackware utility designed to verify package installation status and locate library ownership.</h3>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Platform-Linux%20--%20Slackware-blue?style=flat-square"/>
-    <a href="/LICENSE">
-        <img alt="GitHub" src="https://img.shields.io/github/license/mxnt10/ckdeps?color=blue&label=License&style=flat-square">
-    </a>
-    <a href="https://github.com/linuxproativo/ckdeps/releases">
-        <img src="https://img.shields.io/github/v/release/mxnt10/ckdeps?color=blue&label=Release%20Version&style=flat-square"/>
-    </a>
-    <img src="https://img.shields.io/github/last-commit/mxnt10/ckdeps?color=blue&label=Last%20Commit&style=flat-square"/>
-    <img src="https://img.shields.io/github/release-date/mxnt10/ckdeps?color=blue&label=Release%20Date&style=flat-square"/>
-    <img src="https://img.shields.io/github/repo-size/mxnt10/ckdeps?color=blue&label=Repo%20Size&style=flat-square"/>
-    <img src="https://img.shields.io/github/downloads/mxnt10/ckdeps/total?color=blue&label=Downloads&style=flat-square">
-    <a href="https://github.com/mxnt10/ckdeps/stargazers">
-        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/mxnt10/ckdeps?color=blue&label=GitHub%20Stars&style=flat-square">
-    </a>
-</h1>
+  <img src="https://img.shields.io/badge/Platform-Slackware-004482?style=flat-square&logo=slackware&logoColor=white"/>
+  <a href="https://github.com/LinuxProativo/ckdeps/releases" style="text-decoration:none;"><img src="https://img.shields.io/github/v/release/LinuxProativo/ckdeps?color=34495e&label=Release&style=flat-square"/></a>
+  <img src="https://img.shields.io/github/last-commit/LinuxProativo/ckdeps?color=34495e&label=Last%20Commit&style=flat-square"/>
+  <img src="https://img.shields.io/github/release-date/LinuxProativo/ckdeps?color=34495e&label=Date&style=flat-square"/><br/>
+  <img src="https://img.shields.io/github/repo-size/LinuxProativo/ckdeps?color=445566&label=Size&style=flat-square"/>
+  <img src="https://img.shields.io/github/downloads/LinuxProativo/ckdeps/total?color=445566&label=Downloads&style=flat-square">
+  <a href="https://github.com/LinuxProativo/ckdeps/stargazers" style="text-decoration:none;"><img src="https://img.shields.io/github/stars/LinuxProativo/ckdeps?color=445566&label=Stars&style=flat-square"></a>
+  <a href="./LICENSE" style="text-decoration:none;"><img src="https://img.shields.io/github/license/mxnt10/ckdeps?color=445566&label=License&style=flat-square"></a>
+</p>
 
-<h3 align="center"> A Slackware utility designed to verify package installation status and locate library ownership. It efficiently checks if a specific package is installed and maps shared libraries to their originating packages within the system's package database.</h3>
+## 🔍 Overview
 
-## Usage Examples
+**CkDeps** is a specialized Slackware utility designed to verify package installation
+status and locate library ownership. It efficiently checks if a specific package is
+installed and maps shared libraries to their originating packages within the system's
+package database.
+
+**CkDeps** is a Slackware utility that allows you to:
+
+- ✅ Check whether a package is installed on the system
+
+- 📚 Identify which package provides a shared library `(.so)`
+
+- ⚡ Perform fast lookups directly in Slackware’s package database
+
+Perfect for system maintenance, package building, and dependency troubleshooting.
+
+
+ ## 🌌 Previews
 
 <p align="center">
     <img src="preview/preview1.png">
@@ -43,31 +54,33 @@
     <img src="preview/preview8.png">
 <p>
 
-## Installation Instructions
+## 🚀 Installation
 
-To install "ckdeps", use the following commands:
+To install **CkDeps**, use the following commands:
 ```sh
-$ git clone https://github.com/mxnt10/ckdeps.git
+$ git clone https://github.com/LinuxProativo/ckdeps.git
 $ cd ckdeps
 
 $ sudo ./install.sh
 ```
 
-## GNU General Public License
+## 📜 GNU General Public License
 
-This repository has scripts that were created to be free software.<br/>
-Therefore, they can be distributed and/or modified within the terms of the *GNU General Public License*.
+This repository has scripts that were created to be free software. Therefore, they can be
+distributed and/or modified within the terms of the *GNU General Public License*.
 
->[General Public License](https://pt.wikipedia.org/wiki/GNU_General_Public_License)
->
->Free Software Foundation (FSF) Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+> ### [General Public License](https://pt.wikipedia.org/wiki/GNU_General_Public_License)
 
-## Comments
+## 🛠️ Support & Contributions
 
-In case of bugs, problems of execution or construction of packages, constructive criticism, among others,
-please submit a message to one of the contacts below.
+Found a bug, have suggestions, or want to contribute?  
+Feel free to open an issue or submit a pull request — all contributions are welcome!
 
-## Contact
+## 📬 Contact & Support
 
-Maintainer: Mauricio Ferrari (LinuxProativo)<br/>
-E-Mail: *m10ferrari1200@gmail.com - contatolinuxdicaspro@gmail.com*<br/>
+* 📧 **Email:** [m10ferrari1200@gmail.com](mailto:m10ferrari1200@gmail.com)
+* 📧 **Email:** [contatolinuxdicaspro@gmail.com](mailto:contatolinuxdicaspro@gmail.com)
+
+<p align="center">
+  <i>Developed with precision in Shell. 🐚</i>
+</p>
