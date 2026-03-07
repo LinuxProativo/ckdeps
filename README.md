@@ -7,6 +7,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Slackware-004482?style=flat-square&logo=slackware&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Language-Shell_Script-%23121011.svg?style=flat-square&logo=gnu-bash&logoColor=white" alt="Bash">
   <a href="https://github.com/LinuxProativo/ckdeps/releases" style="text-decoration:none;"><img src="https://img.shields.io/github/v/release/LinuxProativo/ckdeps?color=34495e&label=Release&style=flat-square"/></a>
   <img src="https://img.shields.io/github/last-commit/LinuxProativo/ckdeps?color=34495e&label=Last%20Commit&style=flat-square"/>
   <img src="https://img.shields.io/github/release-date/LinuxProativo/ckdeps?color=34495e&label=Date&style=flat-square"/><br/>
