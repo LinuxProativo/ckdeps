@@ -1,22 +1,17 @@
 Sun Feb 01 22:09:12 -03 2026:
-    - add logo.png
-    - change readme
+    - Added the official logo.png to the project assets.
+    - Updated the README documentation to reflect the latest changes.
 changelog - 2023/06/25:
-    - update version 6.2.2
-    - fix bugs
+    - Resolved several internal bugs to improve application stability.
 changelog - 2023/06/13:
-    - fix -s parameter
-    - update version 6.2.1
+    - Fixed an issue affecting the proper handling of the -s parameter.
 changelog - 2023/05/21:
-    - update version 6.2
-    - revised readme
-    - refactory code
+    - Performed a comprehensive revision of the README file.
+    - Refactored the core source code for better readability and performance.
 changelog - 2022/09/17:
-    - update version 6.1/6.1_2
-    - update readme
-    - optimized code
+    - Updated the README documentation with new instructions.
+    - Optimized the codebase to improve execution efficiency.
 changelog - 2022/03/13:
-    - revision version 6.0_2
-    - fixed input of parameters by pipe
+    - Fixed a bug that prevented the correct processing of parameters passed via pipe.
 changelog - 2022/02/26:
-    - first commit version
+    - Established the first commit version of the repository.

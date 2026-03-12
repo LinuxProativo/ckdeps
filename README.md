@@ -7,14 +7,15 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Slackware-004482?style=flat-square&logo=slackware&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Language-Shell_Script-%23121011.svg?style=flat-square&logo=gnu-bash&logoColor=white" alt="Bash">
-  <a href="https://github.com/LinuxProativo/ckdeps/releases" style="text-decoration:none;"><img src="https://img.shields.io/github/v/release/LinuxProativo/ckdeps?color=34495e&label=Release&style=flat-square"/></a>
-  <img src="https://img.shields.io/github/last-commit/LinuxProativo/ckdeps?color=34495e&label=Last%20Commit&style=flat-square"/>
-  <img src="https://img.shields.io/github/release-date/LinuxProativo/ckdeps?color=34495e&label=Date&style=flat-square"/><br/>
-  <img src="https://img.shields.io/github/repo-size/LinuxProativo/ckdeps?color=445566&label=Size&style=flat-square"/>
-  <img src="https://img.shields.io/github/downloads/LinuxProativo/ckdeps/total?color=445566&label=Downloads&style=flat-square">
-  <a href="https://github.com/LinuxProativo/ckdeps/stargazers" style="text-decoration:none;"><img src="https://img.shields.io/github/stars/LinuxProativo/ckdeps?color=445566&label=Stars&style=flat-square"></a>
-  <a href="./LICENSE" style="text-decoration:none;"><img src="https://img.shields.io/github/license/LinuxProativo/ckdeps?color=445566&label=License&style=flat-square"></a>
+  <img src="https://img.shields.io/badge/Language-Shell_Script-%23121011.svg?style=flat-square&logo=gnu-bash&logoColor=white">
+  <img src="https://img.shields.io/github/languages/code-size/LinuxProativo/ckdeps?style=flat-square&logo=paperlessngx&label=Code%20Size"/>
+  <img src="https://img.shields.io/github/repo-size/LinuxProativo/ckdeps?style=flat-square&logo=paperlessngx&label=Repo%20Size"/>
+  <img src="https://img.shields.io/github/v/release/LinuxProativo/ckdeps?label=Release&style=flat-square&logo=github"/>
+  <img src="https://img.shields.io/github/last-commit/LinuxProativo/ckdeps?label=Last%20Commit&style=flat-square&logo=github"/>
+  <img src="https://img.shields.io/github/release-date/LinuxProativo/ckdeps?label=Release%20Date&style=flat-square&logo=github"/>
+  <img src="https://img.shields.io/github/downloads/LinuxProativo/ckdeps/total?color=FCC624&label=Downloads&style=flat-square&logo=abdownloadmanager&logoColor=white">
+  <img src="https://img.shields.io/github/stars/LinuxProativo/ckdeps?color=FCC624&label=Stars&style=flat-square&logo=apachespark&logoColor=white">
+  <img src="https://img.shields.io/github/license/LinuxProativo/ALPack?color=673ab7&label=License&style=flat-square&logo=opensourcehardware&logoColor=white"/>
 </p>
 
 ## 🔍 Overview
@@ -65,17 +66,17 @@ $ cd ckdeps
 $ sudo ./install.sh
 ```
 
-## 📜 GNU General Public License
-
-This repository has scripts that were created to be free software. Therefore, they can be
-distributed and/or modified within the terms of the *GNU General Public License*.
-
-> ### [General Public License](https://pt.wikipedia.org/wiki/GNU_General_Public_License)
-
 ## 🛠️ Support & Contributions
 
 Found a bug, have suggestions, or want to contribute?  
 Feel free to open an issue or submit a pull request — all contributions are welcome!
+
+## 📜 GNU General Public License
+
+This repository has scripts that were created to be free software.  
+Therefore, they can be distributed and/or modified within the terms of the ***GNU General Public License***.
+
+> ### See the [General Public License](LICENSE) file for details.
 
 ## 📬 Contact & Support
 
