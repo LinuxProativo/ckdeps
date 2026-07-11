@@ -12,6 +12,6 @@ set -e
 }
 
 install -Dm 0755 "$PRGNAM" "$install_root/usr/bin"
-cp -a changelog RELEASE LICENSE README.md "$install_root/usr/doc/$PRGNAM-$VERSION"
+cp -a changelog LICENSE README.md "$install_root/usr/doc/$PRGNAM-$VERSION"
 
 exit 0

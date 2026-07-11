@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="ALPack" width="280"/>
+  <img src="logo.png" width="300"/>
 </p>
 
 <h1 align="center"><strong>CkDeps - Check Dependencies for Slackware</strong></h1>
@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/github/release-date/LinuxProativo/ckdeps?label=Release%20Date&style=flat-square&logo=github"/>
   <img src="https://img.shields.io/github/downloads/LinuxProativo/ckdeps/total?color=FCC624&label=Downloads&style=flat-square&logo=abdownloadmanager&logoColor=white">
   <img src="https://img.shields.io/github/stars/LinuxProativo/ckdeps?color=FCC624&label=Stars&style=flat-square&logo=apachespark&logoColor=white">
-  <img src="https://img.shields.io/github/license/LinuxProativo/ALPack?color=673ab7&label=License&style=flat-square&logo=opensourcehardware&logoColor=white"/>
+  <img src="https://img.shields.io/github/license/LinuxProativo/ckdeps?color=673ab7&label=License&style=flat-square&logo=opensourcehardware&logoColor=white"/>
 </p>
 
 ## 🔍 Overview
@@ -31,7 +31,7 @@ package database.
 
 - 📚 Identify which package provides a shared library `(.so)`
 
-- ⚡ Perform fast lookups directly in Slackware’s package database
+- ⚡ Perform fast lookups directly in Slackware's package database
 
 Perfect for system maintenance, package building, and dependency troubleshooting.
 
