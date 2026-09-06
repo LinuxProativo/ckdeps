@@ -39,21 +39,21 @@ Perfect for system maintenance, package building, and dependency troubleshooting
  ## 🌌 Previews
 
 <p align="center">
-    <img src="preview/preview1.png">
+    <img src="preview/preview1.webp">
     <br/><br/>
-    <img src="preview/preview2.png">
+    <img src="preview/preview2.webp">
     <br/><br/>
-    <img src="preview/preview3.png">
+    <img src="preview/preview3.webp">
     <br/><br/>
-    <img src="preview/preview4.png">
+    <img src="preview/preview4.webp">
     <br/><br/>
-    <img src="preview/preview5.png">
+    <img src="preview/preview5.webp">
     <br/><br/>
-    <img src="preview/preview6.png">
+    <img src="preview/preview6.webp">
     <br/><br/>
-    <img src="preview/preview7.png">
+    <img src="preview/preview7.webp">
     <br/><br/>
-    <img src="preview/preview8.png">
+    <img src="preview/preview8.webp">
 <p>
 
 ## 🚀 Installation

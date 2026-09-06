@@ -1,14 +1,10 @@
 #!/bin/bash
 #
-# CKDeps 6.2.2 - Analysis of Dependencies of Binary Applications Installed on Slackware
+# CKDeps 6.2.3 - Dependencies Analysis for Binaries and Packages Installed on Slackware
 #
-# Criação do Projeto: 2021/04/04
-# Última Atualização: 2026/02/01
+# Created at 2021/04/04 - Mauricio Ferrari - mxnt <m10ferrari1200@gmail.com>
 #
-# By Mauricio Ferrari.
-#
-##########################################################################################
-
+# Last Update: 2026/09/06
 
 r='\e[31m'
 g='\e[32m'
@@ -22,29 +18,23 @@ spkg='FALSE'
 apkg='FALSE'
 cpkg='FALSE'
 
-
-#  Exibição de Informação
-
 function info_view
 {
-
-printf "\n${b}CKDeps v$(grep -Eo "[0-9].[0-9]" <(head -3 $0))
-Pesquisa por Pacotes Instalados e Procura por Dependências Faltantes em Binários.\n
-${g}Sintaxe: $y${0##*/} $r<Parâmetros> \e[33margumentos\n
-${g}Parâmetros:
-\t$r-b <binário> $b:$y Pesquisa por Dependências em Executáveis Binários.
-\t$r-s <pacotes> $b:$y Pesquisa Básica de Pacotes Instalados no Sistema.
-\t$r-S <pacotes> $b:$y Pesquisa Avançada de Pacotes Instalados no Sistema.
-\t$r-c <arquivo> $b:$y Pesquisa por um Arquivo no Conteúdo dos Pacotes Instalados.\n
-${g}Parâmetros Extras:
-\t${r}i $b:$y Ignora Diferenças Entre Maiúsculas/Minúsculas.
-\t    Pode ser usado com os Parâmetros$r s$y,${r}S$y e$r c$y.\n
-${g}Exemplos de Uso:
-\t$y${0##*/} $r-b$c /usr/bin/megasync
-\t$y${0##*/} $r-s$c gcc libtorrent
-\t$y${0##*/} $r-Si$c qmplay2 wxgtk3
-\t$y${0##*/} $r-c$c libass libXv\n\n$t"
-
+printf "\n${b}CKDeps $(grep -Eo "([0-9]+[.])+[0-9]+" <(head -3 $0))
+Search installed Slackware packages and check binary dependencies.\n
+${g}Syntax: $y${0##*/} $r<options> \e[33margs\n
+${g}Options:
+    $r-b <binary> $b:$y Search binary dependencies.
+    $r-s <pkgs>   $b:$y Basic package search.
+    $r-S <pkgs>   $b:$y Advanced package search.
+    $r-c <files>  $b:$y Search files in installed packages.\n
+${g}Extra Option:
+    ${r}i $b:$y Ignore Case Sensitive. <Usage With ${r}s$y,${r}S$y and$r c$y>\n
+${g}Example:
+    $y${0##*/} $r-b$c /usr/bin/megasync
+    $y${0##*/} $r-s$c gcc libtorrent
+    $y${0##*/} $r-Si$c qmplay2 wxgtk3
+    $y${0##*/} $r-c$c libass libXv\n\n$t"
 exit 0
 }
 
@@ -67,7 +57,7 @@ while getopts bsSci option 2>&-; do
         'S') [ "$s" != "TRUE" ] && { apkg=TRUE; s=TRUE; } || info_view ;;
         'c') [ "$s" != "TRUE" ] && { cpkg=TRUE; s=TRUE; } || info_view ;;
         'i') parm='-i' ;;
-        '?') info_view ;;
+        *) info_view ;;
     esac
 done
 
@@ -76,31 +66,31 @@ done
 
 [ "$clib" == "TRUE" ] && {
     [ ! $(($#-1)) -eq 1 ] && {
-        printf "\n${r}Muitos Parâmetros!$t\n\n" >&2
+        printf "\n${r}Too Many Parameters!$t\n\n" >&2
         exit 1
     }
 
     [ ! -e $arg ] && {
-        printf "\n${r}Arquivo Inexistente!$t\n\n" >&2
+        printf "\n${r}File Does Not Exist!$t\n\n" >&2
         exit 1
     }
 
     ckbin=$(ldd $arg 2>&-)
 
     [ -z "$ckbin" ] && {
-        printf "\n${r}Não é um Executável Binário Válido!$t\n\n" >&2
+        printf "\n${r}Not a Valid Binary Executable!$t\n\n" >&2
         exit 1
     }
 
     cklib=$(awk -F= '{print $1}' <(grep '=> not found' <<< $ckbin))
-    printf "\n${y}Dependências Faltantes: $b($(wc -w <<< $cklib))$r\n$cklib$t\n\n"
+    printf "\n${y}Missing Dependencies: $b($(wc -w <<< $cklib))$r\n$cklib$t\n\n"
     exit 0
 }
 
 
 #  Operações para Pesquisas
 
-cd /var/log/packages
+cd /var/lib/pkgtools/packages/
 lst=$(printf "%s\n" *)
 
 
@@ -112,7 +102,7 @@ lst=$(printf "%s\n" *)
         found=$(echo -e "$found\n$(grep $parm "$pkg" <<< $lst)")
     }
     found=$(sort -u <<< $found)
-    printf "\n${y}Pacotes Encontrados: $b($(wc -w <<< $found))$c$(sed "s/^/	/" <<< $found)$t\n\n"
+    printf "\n${y}Packages Found: $b($(wc -w <<< $found))$c$(sed "s/^/	/" <<< $found)$t\n\n"
     exit 0
 }
 
@@ -125,8 +115,8 @@ lst=$(printf "%s\n" *)
         verify=$(grep $parm "^$pkg-[0-9]" <<< $lst)
         [ ! "$verify" ] && notfound=$(echo -e "$notfound\n\t$pkg") || found=$(echo -e "$found\n\t$verify")
     }
-    printf "\n${y}Pacotes Encontrados: $b($(wc -w <<< $found))$g$(sort <<< $found)$t\n"
-    printf "\n${y}Pacotes Não Encontrados: $b($(wc -w <<< $notfound))$r$(sort <<< $notfound)$t\n\n"
+    printf "\n${y}Packages Found: $b($(wc -w <<< $found))$g$(sort <<< $found)$t\n"
+    printf "\n${y}Packages Not Found: $b($(wc -w <<< $notfound))$r$(sort <<< $notfound)$t\n\n"
     exit 0
 }
 
